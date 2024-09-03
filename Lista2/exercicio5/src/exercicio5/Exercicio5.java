@@ -5,8 +5,20 @@ public class Exercicio5 {
 
     String palavra;
     
+    //getter e setters
+    public String getPalavra() {
+        return palavra;
+    }
+
+    public void setPalavra(String palavra) {
+        this.palavra = palavra;
+    }
+    
+    
+    
     public void Contador(){
         Scanner ler = new Scanner(System.in);//scanner
+        System.out.print("Escreva uma palavra: ");
         palavra = ler.nextLine();
         
           // Dividir a frase em palavras usando espaço como delimitador

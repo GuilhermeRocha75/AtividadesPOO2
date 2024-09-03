@@ -10,6 +10,17 @@ import java.util.Scanner;
 public class Exercicio2 {
 String frase;
 
+//getter e setters
+
+    public String getFrase() {
+        return frase;
+    }
+
+    public void setFrase(String frase) {
+        this.frase = frase;
+    }
+
+
   
     public void lerFrase(){
         Scanner ler = new Scanner(System.in);//scanner

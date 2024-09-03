@@ -2,14 +2,21 @@
 package exercicio1;
 
 import java.util.Scanner;
-/**
- *
- * @author aluno.saolucas
- */
+
 public class Exercicio1 {
 String palavra;
 
+//getter e setters
+    public String getPalavra() {
+        return palavra;
+    }
 
+    public void setPalavra(String palavra) {
+        this.palavra = palavra;
+    }
+
+    
+    
 Scanner ler = new Scanner(System.in);//scanner
 
 public void lerPalavra(){

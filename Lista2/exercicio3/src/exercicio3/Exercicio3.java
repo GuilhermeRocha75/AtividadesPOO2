@@ -6,6 +6,18 @@ import java.util.Scanner;
 public class Exercicio3 {
 String frase;
   
+//getter e setters
+
+    public String getFrase() {
+        return frase;
+    }
+
+    public void setFrase(String frase) {
+        this.frase = frase;
+    }
+
+
+
     public void inversao(){
         Scanner ler = new Scanner(System.in);//scanner
         System.out.println("Escreva algo aqui: ");

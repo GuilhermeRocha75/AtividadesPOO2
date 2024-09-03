@@ -6,9 +6,21 @@ public class Exercicio4 {
 
     String palavra;
     
+    
+    
+    //getter e setters
+    public String getPalavra() {
+        return palavra;
+    }
+
+    public void setPalavra(String palavra) {
+        this.palavra = palavra;
+    }
+    //
+    
     public void palindromo(){
         Scanner ler = new Scanner(System.in);//scanner
-        System.out.println("Digite uma palavra: ");
+        System.out.print("Digite uma palavra: ");
         palavra = ler.nextLine();
         
         

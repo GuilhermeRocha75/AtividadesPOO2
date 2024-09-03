@@ -1,21 +1,35 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package exercicio8;
 
-/**
- *
- * @author aluno.saolucas
- */
+import java.util.Scanner;
+
 public class Exercicio8 {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+ String numeroCartao;
+ 
+ //getter e setters
+
+    public String getNumeroCartao() {
+        return numeroCartao;
     }
-    
+
+    public void setNumeroCartao(String numeroCartao) {
+        this.numeroCartao = numeroCartao;
+    }
+ 
+
+    public void mascararCartao() {
+        Scanner ler = new Scanner(System.in);
+        System.out.print("Digite o número do cartão de crédito: ");
+        numeroCartao = ler.nextLine();
+        
+        String mascarado = "************" + numeroCartao.substring(numeroCartao.length() - 4);
+        
+        System.out.println("Número do cartão: " + mascarado);
+    }
+
+    public static void main(String[] args) {
+        Exercicio8 exercicio = new Exercicio8();
+        exercicio.mascararCartao();
+    }
 }
